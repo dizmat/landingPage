@@ -8,11 +8,13 @@ menu,
 .information-container,
 .image-info-container,
 .testimonial-container,
-.quotee {
+.quotee,
+.cta-container,
+.cta {
   display: flex;
 }
 
-/* All the code below is related to the header */
+/* header */
 header {
   background-color: #1f2937;
   margin: 0px;
@@ -36,9 +38,8 @@ a {
   color: #e5e7eb;
   text-decoration: none;
 }
-/* End of header code */
 
-/* misc items on the page */
+/* misc lmnts */
 body {
   font-family: Roboto, sans-serif;
   flex-direction: column;
@@ -48,7 +49,6 @@ body {
 menu {
   list-style: none;
 }
-/* end of misc */
 
 /* hero section */
 .hero {
@@ -82,7 +82,7 @@ button {
   background-color: #3882f6;
   color: #f9faf8;
   border: none;
-  padding: 8px 20px;
+  padding: 8px 30px;
   border-radius: 10px;
   font-weight: 700;
   font-size: medium;
@@ -90,10 +90,9 @@ button {
 
 img.hero {
   object-fit: cover;
-  width: 650px;
+  width: 550px;
   height: 250px;
 }
-/* end of hero */
 
 /* information */
 .information-container {
@@ -127,7 +126,6 @@ img.info {
   border: 3px solid #3882f6;
   border-radius: 25px;
 }
-/* end of information */
 
 /* testimonial */
 .testimonial-container {
@@ -148,8 +146,43 @@ img.info {
 .quotee {
   font-size: 25px;
   font-weight: 600;
-  color:#1f2937;
+  color: #1f2937;
   padding-left: 800px;
 }
-/* end of testimonial */
 
+/* CTA */
+.cta-container {
+  justify-content: space-evenly;
+  margin: 100px 0px;
+}
+
+.cta {
+  align-items: center;
+  gap: 175px;
+  background-color: #3882f6;
+  border-radius: 10px;
+  padding: 50px 150px;
+}
+
+.cta-heading {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cta-subtext {
+  color: white;
+}
+.cta button {
+  border: 2px solid #e5e7eb;
+}
+
+/* footer */
+footer {
+  background-color: #1f2937;
+  text-align: center;
+  padding: 35px 0px;
+  color: #e5e7eb;
+  font-weight: 400;
+  font-size: 20px;
+}
