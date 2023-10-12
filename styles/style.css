@@ -4,7 +4,9 @@ header,
 body,
 menu,
 .hero,
-.left {
+.left,
+.information-container,
+.image-info-container {
   display: flex;
 }
 
@@ -39,10 +41,6 @@ body {
   font-family: Roboto, sans-serif;
   flex-direction: column;
   margin: 0px;
-}
-
-img.info {
-  width: 200px;
 }
 
 menu {
@@ -93,3 +91,38 @@ img.hero {
   width: 650px;
   height: 250px;
 }
+/* end of hero */
+
+/* information */
+.information-container {
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 125px; 
+}
+
+.info-header {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1f2937;
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.image-info-container {
+  justify-content: center;
+  gap: 50px;
+}
+
+.text {
+  width: 200px;
+  text-align: center;
+}
+
+img.info {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #3882f6;
+  border-radius: 25px;
+}
+/* end of information */
